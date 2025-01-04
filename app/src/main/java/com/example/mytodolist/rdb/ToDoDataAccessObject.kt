@@ -2,7 +2,6 @@ package com.example.mytodolist.rdb
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
-import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.mytodolist.ToDoItems
