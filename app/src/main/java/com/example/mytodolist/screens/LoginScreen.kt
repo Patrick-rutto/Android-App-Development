@@ -55,7 +55,7 @@ fun LoginScreen(modifier: Modifier = Modifier,
             is AuthState.Error -> Toast.makeText(
                 context,
                 (authState.value as AuthState.Error)
-                    .message, Toast.LENGTH_SHORT
+                    .message, Toast.LENGTH_LONG
             ).show()
 
             else -> Unit                                       // Returns Nothing
@@ -69,7 +69,12 @@ fun LoginScreen(modifier: Modifier = Modifier,
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        Text(text = "Please Login", fontSize = 30.sp)          // Text Composable to Display Text in UI
+
+        Text(text = "My Todo App", fontSize = 30.sp)
+
+        Spacer(modifier = Modifier.height(50.dp))
+
+        Text(text = "Please Login", fontSize = 20.sp)          // Text Composable to Display Text in UI
 
         Spacer(modifier = Modifier                             // Spacer Used for Layout Spacing to Separate Components
             .height(15.dp))
